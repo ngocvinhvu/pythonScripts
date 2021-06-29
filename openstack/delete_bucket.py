@@ -1,13 +1,13 @@
 import boto3
 
 
-s3 = boto3.resource('s3', endpoint_url='http://10.5.90.184',
-    aws_access_key_id = 'VZZVY7DF8M3M8542823W',
-    aws_secret_access_key = 'UckdxApU9bAe1kecGkUTiwBoykgQy8QH0WaLIvLL')
+s3 = boto3.resource('s3', endpoint_url='',
+    aws_access_key_id = '',
+    aws_secret_access_key = '')
 
-s3client = boto3.client('s3', endpoint_url='http://10.5.90.184',
-    aws_access_key_id = 'VZZVY7DF8M3M8542823W',
-    aws_secret_access_key = 'UckdxApU9bAe1kecGkUTiwBoykgQy8QH0WaLIvLL')
+s3client = boto3.client('s3', endpoint_url='',
+    aws_access_key_id = '',
+    aws_secret_access_key = '')
 
 for bucket in s3.buckets.all():
     print('List buckets: ')
